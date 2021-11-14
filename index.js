@@ -14,10 +14,10 @@ app.use(express.json());
 
 
 client.connect((err) => {
-  const servicesCollection = client.db("karBox").collection("collections");
-  const usersCollection = client.db("karBox").collection("users");
-  const ordersCollection = client.db("karBox").collection("orders");
-  const reviewsCollection = client.db("karBox").collection("reviews");
+  const servicesCollection = client.db("carHub").collection("collections");
+  const usersCollection = client.db("carHub").collection("users");
+  const ordersCollection = client.db("carHub").collection("orders");
+  const reviewsCollection = client.db("carHub").collection("reviews");
 
   console.log("database connected");
   // get all collections
