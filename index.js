@@ -27,7 +27,7 @@ client.connect((err) => {
     res.send(result);
   });
   // get single  collection
-
+// get single collection
   app.get("/singleCollection/:id", async (req, res) => {
     const result = await servicesCollection
       .find({ _id: ObjectId(req.params.id) })
